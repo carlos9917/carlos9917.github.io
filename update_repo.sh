@@ -1,13 +1,17 @@
-logreport=../log/current_state_sims.html
+logreport=/home/ms/dk/nhd/scripts/carra/log/current_state_sims.html
 cp ../log/current_state_sims.html .
 if [ $? -eq 0 ]; then
     echo Copy html OK
 else
  echo Failed to copy  $logreport
+ echo Checking if file exists
  if test -f "$logreport"; then
-      echo "$logreport exists."
+      echo $logreport exists
+      echo Updating repo
   else
-      echo "$logreport missing"
+      echo $logreport missing
+      echo Not updating repo at this time
+      exit
   fi
 fi
 cp ../GanntChart_CARRA.html .
