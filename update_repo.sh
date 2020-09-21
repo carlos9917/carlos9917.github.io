@@ -1,3 +1,8 @@
+#!/bin/bash
+#If no arguments do usual updates
+
+if [ -z $1 ]; then
+
 logreport=/home/ms/dk/nhd/scripts/carra/log/current_state_sims.html
 cp ../log/current_state_sims.html .
 if [ $? -eq 0 ]; then
@@ -29,3 +34,9 @@ cp ../dayProgress_IGB_2B_2020.png ./figs
 cp ../dayProgress_IGB_3_2020.png ./figs
 git commit -am "update repo"
 git push origin master
+else
+echo $1
+echo Updating only local files
+git commit -am "short update"
+git push origin master
+fi
