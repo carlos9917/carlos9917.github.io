@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%; //change to 33 for 3 images
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
+</head>
+<body>
+<h1> GNU vs INTEL comparison <h1>
+<h2>SURFTEMPERATURE</h2>
+<p>From left to right: GNU-INTEL with Nio=2,4 and 8 (Mesh: 48x48)</p>
+
+<div class="row">
+  <div class="column">
+    <img src="SURFTEMPERATURE_diffs_GNU_INTEL_2_48_48_0048.png" alt="nio_1" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="SURFTEMPERATURE_diffs_GNU_INTEL_4_48_48_0048.png" alt="nio_4" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="SURFTEMPERATURE_diffs_GNU_INTEL_8_48_48_0048.png" alt="nio_8" style="width:100%">
+  </div>
+ </div>
+
+<h2>MSLPRESSURE</h2>
+<p>From left to right: GNU-INTEL with Nio=2,4 and 8 (Mesh: 48x48)</p>
+<div class="row">
+  <div class="column">
+    <img src="MSLPRESSURE_diffs_GNU_INTEL_2_48_48_0048.png" alt="nio_1" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="MSLPRESSURE_diffs_GNU_INTEL_4_48_48_0048.png" alt="nio_4" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="MSLPRESSURE_diffs_GNU_INTEL_8_48_48_0048.png" alt="nio_8" style="width:100%">
+  </div>
+ </div>
+ 
+<h1> GNU, varying io server <h1>
+<h2>SURFTEMPERATURE</h2>
+<p>From left to right: GNU with Nio=2,4 and 8 (Mesh: 48x48)</p>
+<div class="row">
+  <div class="column">
+    <img src="SURFTEMPERATURE_GNU_48_48_2_1_0048.png" alt="nio_1" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="SURFTEMPERATURE_GNU_48_48_4_1_0048.png" alt="nio_4" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="SURFTEMPERATURE_GNU_48_48_4_1_0048.png" alt="nio_8" style="width:100%">
+  </div>
+ </div>
+ 
+<h2>MSLPRESSURE</h2>
+<p>From left to right: GNU with Nio=2,4 and 8 (Mesh: 48x48)</p>
+<div class="row">
+  <div class="column">
+    <img src="MSLPRESSURE_GNU_48_48_2_1_0048.png" alt="nio_1" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="MSLPRESSURE_GNU_48_48_4_1_0048.png" alt="nio_4" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="MSLPRESSURE_GNU_48_48_8_1_0048.png" alt="nio_8" style="width:100%">
+  </div>
+ </div>
+ 
+
+<h1> INTEL, varying io server  <h1>
+<h2>SURFTEMPERATURE</h2>
+<p>From left to right: GNU with Nio=2,4 and 8 (Mesh: 48x48)</p>
+<div class="row">
+  <div class="column">
+    <img src="SURFTEMPERATURE_INTEL_48_48_2_1_0048.png" alt="nio_1" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="SURFTEMPERATURE_INTEL_48_48_4_1_0048.png" alt="nio_4" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="SURFTEMPERATURE_INTEL_48_48_4_1_0048.png" alt="nio_8" style="width:100%">
+  </div>
+ </div>
+<h2>MSLPRESSURE</h2>
+<p>From left to right: GNU with Nio=2,4 and 8 (Mesh: 48x48)</p>
+<div class="row">
+  <div class="column">
+    <img src="MSLPRESSURE_INTEL_48_48_2_1_0048.png" alt="nio_1" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="MSLPRESSURE_INTEL_48_48_4_1_0048.png" alt="nio_4" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="MSLPRESSURE_INTEL_48_48_8_1_0048.png" alt="nio_8" style="width:100%">
+  </div>
+ </div>
+</body>
+</html>
+
