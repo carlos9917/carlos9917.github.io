@@ -6,6 +6,13 @@
   box-sizing: border-box;
 }
 
+.column50 {
+  float: left;
+  width: 50%; //change to 33 for 3 images
+  padding: 5px;
+}
+
+
 .column {
   float: left;
   width: 33.33%; //change to 33 for 3 images
@@ -51,18 +58,15 @@
   </div>
  </div>
  
-<h1> GNU, varying io server <h1>
+<h1> GNU and INTEL, varying io server <h1>
 <h2>SURFTEMPERATURE</h2>
-<p>From left to right: GNU with Nio=2,4 and 8 (Mesh: 48x48)</p>
+<p>Left: GNU with Nio=2, right: INTEL with Nio=2 (Mesh: 48x48)</p>
 <div class="row">
-  <div class="column">
-    <img src="SURFTEMPERATURE_GNU_48_48_2_1_0048.png" alt="nio_1" style="width:100%">
+  <div class="column50">
+    <img src="SURFTEMPERATURE_GNU_48_48_2_1_0048.png" alt="nio_2_gnu" style="width:100%">
   </div>
-  <div class="column">
-    <img src="SURFTEMPERATURE_GNU_48_48_4_1_0048.png" alt="nio_4" style="width:100%">
-  </div>
-  <div class="column">
-    <img src="SURFTEMPERATURE_GNU_48_48_4_1_0048.png" alt="nio_8" style="width:100%">
+  <div class="column50">
+    <img src="SURFTEMPERATURE_INTEL_48_48_2_1_0048.png" alt="nio_2_intel" style="width:100%">
   </div>
  </div>
  
