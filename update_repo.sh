@@ -33,6 +33,8 @@ cp ../dayProgress_NE_2_2020.png ./figs
 cp ../dayProgress_NE_3_2020.png ./figs
 cp ../dayProgress_IGB_2B_2020.png ./figs
 cp ../dayProgress_IGB_3_2020.png ./figs
+cp ../dayProgress_IGB_3_2021.png ./figs
+cp ../dayProgress_NE_3_2021.png ./figs
 git commit -am "update repo"
 git push origin master
 else
