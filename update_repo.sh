@@ -3,7 +3,9 @@
 
 if [ -z $1 ]; then
 
-logreport=/home/ms/dk/nhd/scripts/carra/log/current_state_sims.html
+#logreport=/home/ms/dk/nhd/scripts/carra/log/current_state_sims.html
+# Changed 20210610
+logreport=/home/ms/dk/nhd/scripts/harmon/harmon/current_state_sims.html
 cp ../log/current_state_sims.html .
 if [ $? -eq 0 ]; then
     echo Copy html OK
