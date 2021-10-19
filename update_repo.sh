@@ -21,7 +21,7 @@ else
       exit
   fi
 fi
-cp ../harmon/harmon/GanttChart_CARRA.html .
+cp ../../harmon/harmon/GanttChart_CARRA.html .
 cp ../waiting_times.html .
 cp ../quota_scripts/mars_east_plots.png .
 cp ../quota_scripts/MARS_archive_status.png .
